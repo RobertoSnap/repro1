@@ -2,14 +2,7 @@
 name = "repro1"
 version = "0.1.0"
 edition = "2021"
+resolver = "2"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
-bevy = "0.5.0"
-
-[patch.crates-io]
-bevy = {git = "https://github.com/bevyengine/bevy.git", commit = "4bbc9f01d073161573e02b443d6fedf4c4e539fb"}
-
-
-# [patch."https://github.com/bevyengine//bevy"]
-# bevy = {git = "https://github.com/bevyengine/bevy.git", commit = "507441d96f83355cdab578d85f804f4bf8d835c9"}
+bevy = {git = "https://github.com/DJMcNab/bevy.git", branch = "broken-parent"}
